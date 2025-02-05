@@ -13,6 +13,19 @@ def read_json_to_dataframe(input_file):
 
 
 def write_dataframe_to_csv(df, output_file):
+    """
+    writes data to csv.
+
+    Args:
+        df (pd.DataFrame): dataframe
+        output_file: name of the output file
+
+    Returns:
+        /
+        
+    Raises:
+        /
+    """
     print(f'Saving to CSV file {output_file}')
     # Save dataframe to CSV file for later analysis
     df.to_csv(output_file, index=False)
