@@ -21,13 +21,13 @@ def test_text_to_duration_float():
     assert text_to_duration(input_val) == pytest.approx(10.33333333333333)
 
 
-@pytest.mark.parametrize("input_value, epected_result", [
+@pytest.mark.parametrize("input_value, expected_result", [
     ("A;", 1),
     ("A; B;", 2),
     ])
 def test_calculate_cew_size (input_value, expected_result):
     """
-    Test that the amount of #FIXME
+    Test that the amount of crew size is correct
     """
     actual_result =  calculate_crew_size(input_value)
     assert actual_result == expected_result
